@@ -1,0 +1,150 @@
+body {
+    background-color: #111111;
+    margin: 0; 
+    
+}
+
+.container {
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.body-card{
+    flex-basis: calc(25% - 40px);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    background: linear-gradient(345deg, #4f0099 25%, rgb(196, 171, 255) 10%);
+}
+
+.button-show{
+    background-color: #4f0099;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 5px;
+    margin-top:10px;
+    margin-bottom: 4px;
+    font-weight: bolder;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+.button-delete{
+    font-weight: bolder;
+    background-color: #BF1B15;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+.body-title{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.alert-success{
+    background-color: #BF1B15;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container .msg-exc{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    color: #fff;
+    gap: 10px;
+    
+}
+
+.alert-updated{
+    background-color:#2B0DD6;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+@media screen and (max-width: 500px ){
+   
+    .body-card{
+        flex-basis: calc(30% - 40px);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 350px;
+        height: 350px;
+        background-color: aliceblue;
+        border-radius: 10px;
+        background: linear-gradient(345deg, #4f0099 25%, rgb(196, 171, 255) 10%);
+    }
+
+
+    .button-show{
+        background-color: #4f0099;
+        color: #fff;
+        font-family: 'Poppins';
+        padding: 5px;
+        margin-top:10px;
+        margin-bottom: 4px;
+        font-weight: bolder;
+        border-top-right-radius: 10px;
+        cursor: pointer;
+       
+    }
+    
+}
+
+@media screen and (max-width: 800px ){
+
+    .body-card{
+        flex-basis: calc(45% - 40px);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 250px;
+        height: 250px;
+        background-color: aliceblue;
+        border-radius: 10px;
+        background: linear-gradient(345deg, #4f0099 25%, rgb(196, 171, 255) 10%);
+    }
+
+   
+    }
+
+     @media screen and (max-width: 900px ){
+        .body-card{
+            flex-basis: calc(50% - 40px);
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 350px;
+            height: 350px;
+            background-color: aliceblue;
+            border-radius: 10px;
+            background: linear-gradient(345deg, #4f0099 25%, rgb(196, 171, 255) 10%);
+        }
+    }
+

@@ -1,0 +1,41 @@
+body {
+    background-color: #111111;
+    margin: 0; 
+    
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+.card-contact{
+    gap: 30px;
+    color: #fff;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #4f0099;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-contact a {
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+.button-edit{
+    border-top-right-radius: 10px;
+    background-color: #0CC6C9;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+

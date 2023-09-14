@@ -1,0 +1,38 @@
+body {
+    background-color: #111111;
+    margin: 0; 
+    
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #fff ;
+}
+
+form {
+   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.text-name, .text-number, input{
+    width: 400px;
+    height: 40px;
+    background-color: #4f0099;
+    color: #fff;
+    font-weight: bolder;
+    border-color: #4f0099;
+    border-radius: 5px;
+    
+}
+
+.text-name, .text-number{
+    padding-left: 10px;
+}
+
+
+
