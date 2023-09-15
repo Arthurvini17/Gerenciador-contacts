@@ -20,10 +20,10 @@
             @if (count($contacts) > 0)
                 <h2>Buscando por: {{ $search }}</h2>
             @else
-                <h2>Nenhum resultado encontrado para: {{ $search }}</h2>
+                <h2 class="search-user">Nenhum resultado encontrado para: {{ $search }}</h2>
             @endif
         @else
-            <h1>Busque seu contato</h1>
+            <h1 class="search-contacts">Busque seu contato</h1>
         @endif
         <form action="/" method="GET">
             <input type="search" name="search">
@@ -50,7 +50,7 @@
                 </div>
             @endforeach
         @elseif(count($contacts) == 0 && $search)
-            <p>Usuário não encontrado. <a href="{{ route('home.index') }}">Ver todos</a></p>
+            <p class="search-user">Usuário não encontrado. <a href="{{ route('home.index') }}">Ver todos</a></p>
         @else
             <p class="msg-exc">Você ainda não adicionou nenhum contato <a href="{{ route('contact.create') }}">Adicione
                     Aqui</a></p>

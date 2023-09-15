@@ -59,7 +59,8 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 
-    public function contacts(){
-        return $this->hasMany('App\Models\Contact');
+    public function contacts()
+    {
+        return $this->hasMany(Contact::class);
     }
 }

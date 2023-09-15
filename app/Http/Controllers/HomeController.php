@@ -14,19 +14,18 @@ class HomeController extends Controller
      */
     public function index()
     {
-
         $search = request('search');
         $user = auth()->user();
+    
         if ($search) {
-            $contacts = Contact::where([['name', 'like', '%' . $search . '%']])->get();
+            $contacts = $user->contacts()->where('name', 'like', '%' . $search . '%')->get();
         } else {
             $contacts = $user->contacts;
         }
-        
     
-
         return view('home', ['contacts' => $contacts, 'search' => $search]);
     }
+    
 
     /**
      * Show the form for creating a new resource.

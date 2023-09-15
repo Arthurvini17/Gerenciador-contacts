@@ -32,7 +32,24 @@ body {
     background-color: aliceblue;
     border-radius: 10px;
     background: linear-gradient(345deg, #4f0099 25%, rgb(196, 171, 255) 10%);
+   
 }
+
+.body-card:hover {
+    transform: scaley(1.2);
+    animation: scaleAnimation 300ms ease-in-out;
+}
+
+
+@keyframes scaleAnimation {
+    from {
+        transform: scaley(1); 
+    }
+    to {
+        transform: scaley(1.2); 
+    }
+}
+
 
 .button-show{
     background-color: #4f0099;
@@ -43,7 +60,11 @@ body {
     margin-bottom: 4px;
     font-weight: bolder;
     border-top-right-radius: 10px;
-    cursor: pointer;
+    cursor: pointer; 
+}
+
+.search-contacts {
+    color: #fff;
 }
 
 .button-delete{
@@ -86,6 +107,18 @@ body {
     display: flex;
 }
 
+.search-user {
+    color: #fff;
+}
+
+.search-container input {
+    border-radius: 6px;
+    background-color: #4f0099;
+    border-bottom-color: black;
+    border-width: 3px ;
+    box-shadow: white 0.2px 0.2px 0.2px 0.2px;
+    
+}
 
 @media screen and (max-width: 500px ){
    
@@ -101,6 +134,8 @@ body {
         background: linear-gradient(345deg, #4f0099 25%, rgb(196, 171, 255) 10%);
     }
 
+  
+
 
     .button-show{
         background-color: #4f0099;
@@ -114,6 +149,8 @@ body {
         cursor: pointer;
        
     }
+    
+    
     
 }
 
